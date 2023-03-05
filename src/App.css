@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100px;
+  padding-top: 20px;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #bfbfbf;
+  height: 2.5px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: #bfbfbf;
+  height: 2.5px;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -6px;
+  background-color: #000000;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -6px;
+  background-color: #000000;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* .canvas-style {
+  position: fixed !important;
+} */
+
+.pencil {
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.eraser {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-width: 0px;
+  margin: 20px 5px 0px;
+}
+
+.icon-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-width: 0.5px;
+  border-color: #dedede;
+  background-color: #ffffff;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.range-slider {
+  padding: 0px 20px;
+}
+
+.btn-img {
+  padding-top: 2px;
+  height: 20px;
+  width: 20px;
+}
+
+.color-check-img {
+  height: 30px;
+  width: 30px;
+  margin-left: -5px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
